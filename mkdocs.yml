@@ -1,0 +1,82 @@
+site_name: YUNA-Crawler-Teaching
+site_description: 一个爬虫小白的学习笔记
+site_author: LeeJc02
+repo_name: YUNA-Crawler-Teaching
+repo_url: https://github.com/LeeJc02/YUNA-crawler-teaching
+
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  include_search_page: false
+  search_index_only: true    
+    
+
+  
+  features:
+    - toc.follow
+    - header.autohide
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    # - navigation.instant
+    - navigation.expand
+    # - navigation.sections
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    # - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+    - content.code.annotate
+
+
+plugins:
+  # - git-authors
+  # - git-revision-date-localized:
+  #   enable_creation_date: true
+  # - git-committers:
+  #   repository: LeeJc02/YUNA-crawler-teaching
+  #   branch: main
+  - search:
+      lang:
+        - zh
+        - en
+
+
+
+nav:
+  - 前言: index.md
+  - Class_1:
+    - 一、预备节: ch01/index.md
+    - 二、爬虫概述: ch02/index.md
+    - 三、小爬虫: ch03/index.md
+    - 四、文件处理: ch04/index.md
+    - 五、AJAX概述: ch05/index.md
+    - 六、反爬: ch06/index.md
+  - Class_2:
+    - 一、数据解析: ch07/index.md
+    - 二、正则: ch08/index.md
+    - 三、bs4: ch09/index.md
+    - 四、XPath: ch10/index.md
+    - 五、Homework: ch11/index.md
